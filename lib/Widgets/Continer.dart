@@ -5,9 +5,9 @@ import '../Coloers/colors.dart';
 class TcircularContainer extends StatelessWidget {
   const TcircularContainer({
     super.key,
-    this.width = 400,
-    this.heigt = 400,
-    this.radius = 400,
+    this.width = 250,
+    this.heigt = 250,
+    this.radius = 250,
     this.padding = 0,
     this.child,
     this.backgraondcolor = TColors.textwhite,
