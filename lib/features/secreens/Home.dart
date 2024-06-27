@@ -8,6 +8,7 @@ import '../../Widgets/Search/search_continer.dart';
 import '../../utils/constans/sizes.dart';
 import '../../utils/decice/device_utility.dart';
 import '../../utils/helpers/helper_function.dart';
+import '../../utils/navigation_menu.dart';
 
 class HomeSecreen extends StatelessWidget {
   const HomeSecreen({super.key});
@@ -116,10 +117,17 @@ class HomeSecreen extends StatelessWidget {
                                     child: Icon(Icons.shopping_cart)),
                               ],
                             ),
-                          ]))),
+                          ]))
+                          ),
+                            
+                          
             ],
+            
           ),
+          
+          
         ),
+         
       ),
     );
   }
