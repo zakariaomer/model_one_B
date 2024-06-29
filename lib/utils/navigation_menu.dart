@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
+import 'package:model_one/features/secreens/profile.dart';
 import 'package:model_one/utils/constans/colors.dart';
 import 'package:model_one/utils/helpers/helper_function.dart';
 
@@ -22,7 +23,7 @@ class NavigationMenu extends StatelessWidget {
               selectedIndex: controller.selectedIndex.value,
               onDestinationSelected: (index) => controller.selectedIndex.value = index,
               backgroundColor: darkMode ?TColors.black :Colors.white,
-              // indicatorColor:darkMode ? TColors.white.withOpacity(0.1):TColors.black.withOpacity(0.1),
+              // indicatorColor:darkMode ? TColors.white.withOpacity(0.1):TColors.black.withOpacity(0.1),                          
               destinations: const [
                 NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
                 NavigationDestination(icon: Icon(Icons.shop), label: 'Store'),
@@ -38,8 +39,9 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final secreens = [
     const HomeSecreen(),
+    const profile11(),
     Container(color: Colors.purple),
-    Container(color: Colors.orange),
+    // Container(color: Colors.orange),
     Container(color: Colors.lightBlue),
   ];
 }

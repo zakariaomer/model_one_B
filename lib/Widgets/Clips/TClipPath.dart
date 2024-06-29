@@ -1,13 +1,12 @@
 import 'package:flutter/cupertino.dart';
-// import '../features/secreens/home/Widgets/Continer.dart';
-import '../utils/constans/colors.dart';
+import '../../utils/constans/colors.dart';
 import 'Continer.dart';
 import 'clip.dart';
 
 class TClipPath extends StatelessWidget {
   const TClipPath({
     super.key,
-     required this.child, required this.hieght,
+     required this.child, required this.hieght, required TCusteomCurvedEdges clipper,
   });
 
   final Widget child;
@@ -111,8 +110,8 @@ class TClipPath extends StatelessWidget {
 
               //   ],
               // ),
-
-
+            
+            
             ],
           ),
         ),

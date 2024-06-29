@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-
 import '../../utils/constans/colors.dart';
 import '../../utils/constans/sizes.dart';
 import '../../utils/decice/device_utility.dart';
@@ -8,7 +7,11 @@ import '../../utils/helpers/helper_function.dart';
 
 class TSearchContainer extends StatelessWidget {
   const TSearchContainer({
-    super.key, required this.text, this.icon,  this.showBackground=true,  this.showBorder=true,
+    super.key, 
+    required this.text, 
+    this.icon, 
+    this.showBackground=true, 
+    this.showBorder=true,
   });
   final String text;
   final  IconData? icon;
@@ -31,14 +34,16 @@ class TSearchContainer extends StatelessWidget {
         child: Row(
           children: [
              Icon(
-              Icons.search,
+              // Icons.search,
+              icon,
               color: TColors.darkGrey,
             ),
             const SizedBox(
               width: TSizes.SpaceBtwItems,
             ),
             Text(
-              'Search in store',
+              // 'Search in store',
+              text,
               style: Theme.of(context).textTheme.bodySmall,
             )
           ],

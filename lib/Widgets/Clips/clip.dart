@@ -22,6 +22,7 @@ class TCusteomCurvedEdges extends CustomClipper<Path> {
     path.quadraticBezierTo(
         thirdfristCurve.dx, thirdfristCurve.dy, thridlasstCurve.dx, thridlasstCurve.dy);
 
+
     path.lineTo(size.width, 0);
     path.close();
     return path;

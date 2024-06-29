@@ -39,7 +39,7 @@ class THome_Appbar extends StatelessWidget {
       leading:
           IconButton(
             onPressed: () {},
-             icon: Icon(Icons.menu)
+             icon: const Icon(Icons.menu)
              ),
       actions: [
         Stack(

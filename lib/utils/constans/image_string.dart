@@ -11,14 +11,12 @@ class TImage {
 
 
 
-  static const String TImages1 = "assets/images/img-2.png";
-  static const String TImages2 = "assta/logos/facebook-icon.png";
-  static const String TImages3 = "assta/logos/facebook-icon.png";
-  static const String TImages4 = "assta/logos/facebook-icon.png";
-  static const String TImages5 = "assta/logos/facebook-icon.png";
-  static const String TImages6 = "assta/logos/facebook-icon.png";
-  static const String TImages7 = "assta/logos/facebook-icon.png";
-  static const String TImages8 = "assta/logos/facebook-icon.png";
+  static const String TImge_HandWatch = "assets/images/img-2.png";
+  static const String TImge_product_05 = "assets/images/product_05.jpg";
+  static const String TImge_product_01 = "assets/images/product_01.jpg";
+  static const String TImge_products_heading = "assets/images/products-heading.jpg";
+  static const String TImgeproduct_03 = "assets/images/product_03.jpg";
+
 
 
 }
