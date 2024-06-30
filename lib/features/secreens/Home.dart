@@ -7,7 +7,6 @@ import '../../Widgets/Categories/THomeCategories.dart';
 import '../../Widgets/Categories/catogrie_section.dart';
 import '../../Widgets/Clips/TClipPath.dart';
 import '../../Widgets/Clips/clip.dart';
-import '../../Widgets/images/t_rounded_image.dart';
 import '../../Widgets/promoslider/promo_slider.dart';
 import '../../utils/constans/sizes.dart';
 
