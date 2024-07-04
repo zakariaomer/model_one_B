@@ -6,41 +6,48 @@ import 'clip.dart';
 class TClipPath extends StatelessWidget {
   const TClipPath({
     super.key,
-     required this.child, required this.hieght, required TCusteomCurvedEdges clipper,
+    required this.child,
+    required this.hieght,
+    required TCusteomCurvedEdges clipper,
+     this.color=TColors.primary,//.withOpacity(0.8),
   });
 
   final Widget child;
-  final double hieght;
+  final double? hieght;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
     return ClipPath(
       clipper: TCusteomCurvedEdges(),
       child: Container(
-        
-        color: TColors.primary.withOpacity(0.8),
+        color:color,
+        //  TColors.primary,//.withOpacity(0.8),
         padding: const EdgeInsets.all(0),
         child: SizedBox(
           height: hieght,
           child: Stack(
             children: [
-              Positioned( //Positioned------1
+              Positioned(
+                //Positioned------1
                 top: -50,
                 right: -100,
                 child: TcircularContainer(
                   backgraondcolor: TColors.textwhite.withOpacity(0.1),
                 ),
               ),
-             
-              Positioned( //Positioned------2
+
+              Positioned(
+                //Positioned------2
                 top: 100,
                 right: -100,
                 child: TcircularContainer(
                   backgraondcolor: TColors.textwhite.withOpacity(0.1),
                 ),
               ),
-             
-              Positioned( //Positioned------3
+
+              Positioned(
+                //Positioned------3
                 top: 100,
                 left: -100,
                 child: TcircularContainer(
@@ -110,8 +117,6 @@ class TClipPath extends StatelessWidget {
 
               //   ],
               // ),
-            
-            
             ],
           ),
         ),

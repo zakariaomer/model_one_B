@@ -18,6 +18,7 @@ class THomeCategories extends StatelessWidget {
           itemBuilder: (_, index) {
             return TCategory_Vrtical_IamgeText(
               image: TImage.TImge_HandWatch,
+              
               title: 'Shose',
               onTap: () {},
             );

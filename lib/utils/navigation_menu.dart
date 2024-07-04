@@ -4,6 +4,7 @@ import 'package:model_one/features/secreens/profile.dart';
 import 'package:model_one/utils/constans/colors.dart';
 import 'package:model_one/utils/helpers/helper_function.dart';
 import '../features/secreens/Home.dart';
+import '../features/secreens/favourites/wislist.dart';
 
 
 class NavigationMenu extends StatelessWidget {
@@ -37,8 +38,10 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final secreens = [
     const HomeSecreen(),
+    
     const profile11(),
-    Container(color: Colors.purple),
+    const FavouriteSecreen(),
+    // Container(color: Colors.purple),
     // Container(color: Colors.orange),
     Container(color: Colors.lightBlue),
   ];

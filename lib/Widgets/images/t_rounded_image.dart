@@ -8,7 +8,7 @@ class TRoundedImage extends StatelessWidget {
     this.width,
     this.height,
     required this.imageUrl,
-    this.applyImageRadius = false,
+    this.applyImageRadius = true,
     this.border,
     this.backgroundColor = TColors.light,
     this.fit = BoxFit.contain,
@@ -16,9 +16,11 @@ class TRoundedImage extends StatelessWidget {
     this.isNetorkImage = false,
     this.onPressed,
     this.boredrRadius = TSizes.md,
+     this.child, 
   });
   final double? width, height;
   final String imageUrl;
+  final Widget? child;
   final bool applyImageRadius;
   final BoxBorder? border;
   final Color backgroundColor;
@@ -33,6 +35,9 @@ class TRoundedImage extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
+        height: height,
+        width: width,
+        padding: padding,
         decoration: BoxDecoration(
           border: border,
           color: backgroundColor,
